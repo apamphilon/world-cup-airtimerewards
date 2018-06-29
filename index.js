@@ -50,13 +50,13 @@ logger.info("first event will fire at: " + job.nextInvocation());
 if (process.env.ENABLE_STATIC_WEB === "true") {
     logger.info("static web server enabled");
     const path = require('path');
-    const port = process.env.PORT || 80;
+    const port = process.env.PORT || 500;
     const express = require("express");
     const app = express();
     app.get('*', function (request, response) {
         response.send("Keep alive");
     });
-    app.listen(port, '0.0.0.0');
+    app.listen(port);
 }
 
 function runJob() {
