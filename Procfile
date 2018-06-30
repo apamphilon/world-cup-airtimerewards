@@ -1,1 +1,1 @@
-web: node index.js football-data
+nonidle: node index.js football-data
