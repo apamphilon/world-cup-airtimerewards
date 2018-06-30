@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "A bot for slack to message about matches of the 2018 FIFA World Cup",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js football-data"
+  },
+  "engines": {
+    "node": "8.11.2"
+  },
   "keywords": [
     "fifa",
     "slack",
